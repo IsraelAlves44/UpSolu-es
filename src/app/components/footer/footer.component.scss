@@ -1,0 +1,38 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 4rem;
+  align-items: center;
+  bottom: 0;
+
+
+  img {
+    width: 50px;
+    opacity: 50%;
+  }
+
+  ul {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  li > a {
+    color: #fff;
+  }
+
+  p {
+    color: #fff;
+    opacity: 50%;
+  }
+}
+

@@ -1,0 +1,24 @@
+.groupContent {
+  display: flex;
+  align-items: center;
+}
+.container-xxl {
+  display: flex;
+  width: 100%;
+  height: 90%;
+}
+span {
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 100px;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+  }
+}
+h6 {
+  text-align: justify;
+  width: 465px;
+}
+
