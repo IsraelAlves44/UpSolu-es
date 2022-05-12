@@ -1,0 +1,15 @@
+.container {
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  height: 74%;
+
+  form {
+    padding: 7rem 0rem;
+  }
+  .buttons {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -20,19 +20,39 @@ nav {
   }
 
   ul {
-    width: 400px;
+    width: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
   }
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
   li > a {
     color: #fff;
-  }
-
-  p {
-    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
     opacity: 50%;
   }
+
+  li > a:hover {
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    opacity: 100%;
+    transition: 0.5s;
+  }
+
+
+  a > p, p{
+    color: #fff;
+    opacity: 50%;
+    margin-left: 0.5rem;
+  }
+
+
 }
 
