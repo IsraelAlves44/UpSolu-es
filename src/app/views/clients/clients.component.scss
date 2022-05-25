@@ -65,14 +65,14 @@ span {
 
     span {
       .container {
-        height: 100vh;
+        height: fit-content;
         h1 {
           font-size: 30px;
         }
 
         .clientGroup {
           display: grid;
-          grid-template-columns: repeat(3, minmax(150px,1fr));
+          grid-template-columns: repeat(3, minmax(120px,1fr));
           gap: 20px;
         }
       }

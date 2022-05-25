@@ -1,33 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-.group {
-  display: flex;
-  justify-content: center;
-
-
-  .container {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-
-    img {
-      width: 200px;
-    }
-
-    .card-footer {
-      padding: 1rem 2rem;
-    }
-
-    .card-body {
-      padding: 1rem 2rem;
-    }
-  }
-}
 
 
 
