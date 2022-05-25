@@ -3,15 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+section {
+  min-height: 100%;
+}
 span {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100%;
 
   background-color: rgb(48, 145, 255);
-  .container {
 
+  .container {
+    min-height: 100vh;
 
     h1 {
       text-align: center;
@@ -64,8 +68,9 @@ span {
   section {
 
     span {
+
       .container {
-        height: fit-content;
+        height: 100vh;
         h1 {
           font-size: 30px;
         }
