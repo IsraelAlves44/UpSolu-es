@@ -5,11 +5,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 section {
   width: 100%;
   min-height: 100%;
+
 
   #headerContainer {
     display: flex;
@@ -63,6 +65,7 @@ section {
         background: linear-gradient(to right, #0085FF 0%, #132BFF 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-weight: bold;
       }
     }
 
@@ -124,16 +127,118 @@ section {
     width: 100%;
     height: fit-content;
     background-color: #fff;
+
     h1 {
-      padding: 2rem;
+      padding: 0.5rem;
+      margin: 0 auto;
+
     }
     .clientGroup {
+      max-width: 760px;
       display: grid;
-      grid-template-columns: repeat(3, 250px);
-      gap: 30px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      img {
+        max-width: 250px;
+      }
     }
   }
 }
 
 
 /** Responsividade 1100 px **/
+
+@media screen and (max-width: 768px) {
+  section {
+    #sectionContainer {
+      display: flex;
+      flex-direction: column;
+      max-height: fit-content;
+      width: 100%;
+      height: fit-content;
+      padding: 1rem 2rem;
+
+      align-content: center;
+      justify-content: space-evenly;
+
+      #sideBox {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+
+        h1{
+          font-size: 38px;
+        }
+
+        button {
+          margin-top: 1rem;
+          background-color: #2CADF5;
+          color: #fff;
+          border-radius: 30px;
+          padding: 0.5rem 3rem;
+          border: 0;
+          outline: 0;
+
+        }
+        span {
+          background: #0085FF;
+          background: linear-gradient(to right, #0085FF 0%, #132BFF 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-weight: bold;
+        }
+      }
+
+      #slideBox{
+        display: block;
+        width: 100%;
+        height: fit-content;
+
+
+        .carousel-inner {
+          .carousel-item{
+            display: flex;
+            justify-content: center;
+
+            img {
+              width: 700px;
+              border-radius: 15px;
+            }
+          }
+        }
+      }
+    }
+
+
+    #clientsBox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 2rem;
+
+      width: 100%;
+      height: fit-content;
+      background-color: #fff;
+
+      h1 {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .clientGroup {
+        max-width: 760px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        img {
+          max-width: 250px;
+        }
+      }
+    }
+  }
+}
